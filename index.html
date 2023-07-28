@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu, Acadêmico - Podcast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("KC5ziZMW1jDgpJwA6");
+    })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <form method="post">
+                <h3>WRITE YOUR HISTORY HERE</h3>
+                <input type="email" id="email" placeholder="Your e-mail" required>
+                <textarea id="message" rows="15" placeholder="Your History" required></textarea>
+                <button type="submit" id="btn" onclick="sendMail()">Send</button>
+            </form>
+        </div>
+        <div class="container">
+            <form>
+                <h3>WRITE YOUR HISTORY HERE</h3>
+                <input type="email" id="email2" placeholder="Your e-mail" required>
+                <textarea id="message2" rows="15" placeholder="Your History" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
